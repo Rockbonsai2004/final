@@ -216,7 +216,7 @@ router.post('/recuperar', async (req, res) => {
         await usuario.save();
 
         // Enlace para restablecer la contraseña
-        const urlRecuperacion = `https://condominio-gray.vercel.app/usuario/recuperar_contra/${tokenRecuperacion}`;
+        const urlRecuperacion = `https://finalpag-bruno-felixs-projects.vercel.app/usuario/recuperar_contra/${tokenRecuperacion}`;
 
         // Configurar Nodemailer
         const transporter = nodemailer.createTransport({
